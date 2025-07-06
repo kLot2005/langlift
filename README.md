@@ -1,40 +1,83 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 LangLift — лендинг для онлайн-платформы изучения языков
 
-## Getting Started
+LangLift — это адаптивный лендинг, разработанный на **Next.js + SCSS**. Цель проекта — создать современный, анимированный и быстро загружаемый сайт, который представляет образовательную платформу для изучения языков через живое общение.
 
-First, run the development server:
+---
+
+## 🚀 Demo
+
+🔗 [Перейти на сайт](......)
+
+---
+
+## ✨ Возможности
+
+- ✅ Современный стек: **Next.js App Router** + **SCSS**
+- ✅ Полностью адаптивный дизайн (мобилка, планшет, десктоп)
+- ✅ Бургер-меню для телефонов
+- ✅ Анимации при скролле (AOS)
+- ✅ SEO-оптимизирован: `title`, `description`, `favicon`, `Open Graph`
+- ✅ Готов к продакшену и деплою на **Vercel**
+- ✅ Простая структура для доработки
+
+---
+
+## 🧠 Использованные технологии
+
+- [Next.js 14](https://nextjs.org/)
+- [SCSS](https://sass-lang.com/)
+- [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
+
+---
+
+## 📁 Структура проекта
+app/
+├─ layout.tsx // Общий layout с мета-данными
+├─ page.tsx // Главная страница
+components/
+├─ common/ // Navbar, Footer
+├─ sections/ // Hero, About, Pricing, Contact
+styles/
+├─ globals.scss // Глобальные стили
+├─ hero.scss, ... // Стили по секциям
+public/
+├─ logo.svg, og-image.png, favicon.ico
+
+
+---
+
+## 🛠 Установка и запуск
 
 ```bash
+git clone https://github.com/kLot2005/langlift.git
+cd langlift
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Деплой
+Сайт задеплоен на Vercel:
 
-## Learn More
+```bash
+npx vercel
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧾 Планы на будущее
+Подключить форму EmailJS или Telegram Bot
+Добавить CMS (например, Contentful)
+Интегрировать Google Analytics
+Мультиязычность (i18n)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📌 Автор
+Проект разработан как практика для портфолио.
+Made with ❤️ and ☕ by @kLot2005
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# langlift
->>>>>>> 2885614c8ba781822a93d38f7280c6fc947023d8
+

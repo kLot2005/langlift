@@ -1,0 +1,76 @@
+.footer {
+  background: #1f2937;
+  color: #ffffff;
+  padding: 20px 20px 20px;
+  font-size: 0.95rem;
+
+  &__container {
+    max-width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto 0;
+  }
+
+  &__logo {
+    width: 32px;
+    height: auto;
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+     margin: auto 0;
+  }
+
+  &__link {
+    color: #d1d5db;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  &__contact {
+    text-align: center;
+     margin: auto 0;
+    p {
+      margin: 4px 0;
+      color: #9ca3af;
+    }
+  }
+
+  &__bottom {
+    text-align: center;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+    padding-top: 25px;
+    p {
+        margin: 0;
+    }
+  }
+}

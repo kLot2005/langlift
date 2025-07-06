@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "@/styles/globals.scss";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Foother";

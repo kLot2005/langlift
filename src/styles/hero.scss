@@ -1,104 +1,127 @@
 .hero {
-    padding: 20px 20px;
-    background: #F9FAFB;
-    text-align: center;
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 40px;
+  padding: 20px 20px;
+  background: #F9FAFB;
+  text-align: center;
 
-        @media(min-width: 768px){
-            flex-direction: row;
-            justify-content: space-between;
-            text-align: left;
-            max-width: 1200px;
-            margin: 0 auto;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+        @media (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
         }
-    }
-    &__title {
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #111827;
+    font-weight: 800;
+
+        @media (min-width: 768px) {
         font-size: 4rem;
-        margin-bottom: 20px;
-        color: #111827;
-        font-weight: 800;
-        font-style: normal;
-    }
+        }
+  }
 
-    &__subtitle{
+  &__subtitle {
+    font-size: 1rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 20px;
+    width: 100%;
+
+        @media (min-width: 768px) {
         font-size: 1.2rem;
-        color: #555;
-        font-weight: 500;
-        font-style: normal;
-        margin-bottom: 20px;
-        width: 100%;
-    }
+        }
+  }
 
-    &__button {
-        display: inline-block;
-        background: #26935C;
-         color: #fff;
-        padding: 12px 24px;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: 500;
-        transition: #26935C 0.3s;
+  &__button {
+    display: inline-block;
+    background: #26935C;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: #26935C 0.3s;
+    margin-bottom: 10px;
 
         &:hover {
-            background: #20784c;
+        background: #20784c;
         }
 
         &--secondary {
-            background: #1d7ab9;
+        background: #1d7ab9;
 
-            &:hover{
-                background:#155f8c;
+            &:hover {
+                background: #155f8c;
             }
         }
 
+  }
 
+    &__image {
+       @media (max-width: 768px) {
+        display: none;
+        }
     }
 
     &__features {
-        margin-top: 60px;
+        margin-top: 40px;
         display: flex;
-        justify-content: space-around;
+        flex-direction: column;
         align-items: center;
-        gap: 200px;
+        gap: 30px;
         flex-wrap: wrap;
-        
-        @media(min-width: 768px){
+
+            @media (min-width: 768px) {
             flex-direction: row;
             justify-content: center;
+            gap: 200px;
         }
 
-        .feature {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            max-width: 200px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #111827;
-        ;
-        }
-
-        .svg {
-            width: 100px;
-            height: 100px;
-        }
+    .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 200px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #111827;
     }
 
-    &__cta {
-        margin-top: 40px;
-        max-width: 500px;
-        margin: 20px auto;
-         p {
-            font-size: 2.5rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-            color: #111827;
-        }
+    .svg {
+      width: 60px;
+      height: 60px;
+
+      @media (min-width: 768px) {
+        width: 100px;
+        height: 100px;
+      }
     }
+  }
+
+  &__cta {
+    margin: 20px auto;
+    max-width: 500px;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #111827;
+
+      @media (min-width: 768px) {
+        font-size: 2.5rem;
+      }
+    }
+  }
 }

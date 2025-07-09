@@ -14,14 +14,19 @@ export default function Navbar() {
             <Link href="/" className="navbar__logo-text">LangLift</Link>
         </div>
 
-        <button className="navbar__burger" onClick={() => setMenuOpen(!menuOpen)}>
+
+        <button
+          className="navbar__burger"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Меню"
+        >
           ☰
         </button>
 
-        <nav className={`navbar__nav ${menuOpen ? 'open' : ''}`}>
-            <a href="#about" className="navbar__link" onClick={() => setMenuOpen(false)}>О проекте</a>
-            <a href="#pricing" className="navbar__link" onClick={() => setMenuOpen(false)}>Тарифы</a>
-            <a href="#contact" className="navbar__link" onClick={() => setMenuOpen(false)}>Контакты</a>
+        <nav className={`navbar__nav ${menuOpen ? "open" : ""}`}>
+          <a href="#about" className="navbar__link">О проекте</a>
+          <a href="#pricing" className="navbar__link">Тарифы</a>
+          <a href="#contact" className="navbar__link">Контакты</a>
         </nav>
       </div>
     </header>
